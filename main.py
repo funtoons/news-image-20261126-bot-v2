@@ -21,10 +21,12 @@ RED = (150, 18, 18)
 GREY = (110, 110, 110)
 LIGHT = (225, 225, 225)
 
-FONT_SERIF = "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"
-FONT_SERIF_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
-FONT_SANS = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
-FONT_SANS_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+FONT_SERIF = os.path.join(_BASE_DIR, "fonts", "DejaVuSerif.ttf")
+FONT_SERIF_BOLD = os.path.join(_BASE_DIR, "fonts", "DejaVuSerif-Bold.ttf")
+FONT_SANS = os.path.join(_BASE_DIR, "fonts", "DejaVuSans.ttf")
+FONT_SANS_BOLD = os.path.join(_BASE_DIR, "fonts", "DejaVuSans-Bold.ttf")
 
 # ---------------------------------------------------------------- data
 
